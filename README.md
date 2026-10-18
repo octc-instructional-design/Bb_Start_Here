@@ -11,6 +11,7 @@ These pages provide information that applies across courses. They are maintained
 - `student-resources.html` — main topic tiles; `index.html` opens this page from the website’s main address
 - `learning-in-blackboard.html` — finding course content, submitting work, discussions, grades, calendars, and Blackboard tutorials
 - `technology-tips.html` — common technology issues and support
+- `padlet.html` — for students: opening a padlet, adding and changing a post, and what not to share
 - `recording-tools.html` — recording and submitting video
 - `chromebook-tips.html` — Chromebook limitations, school-managed devices, and computer lab information
 - `respondus-lockdown-browser.html` — getting ready for tests that require Respondus
@@ -29,7 +30,7 @@ These pages provide information that applies across courses. They are maintained
 - `instructor-links.html` — direct links, copy buttons, and embed code
 - `start-here-checklist.html` — Start Here setup guidance and checklist
 - `instructor-tools.html` — Blackboard banner, heading, and other teaching tools
-- `padlet-guide.html` — joining OCTC's Padlet for Schools account, Padlet training, and adding a padlet to a course
+- `instructor-padlet.html` — for instructors: joining OCTC's Padlet for Schools account, Padlet training, and setting up a padlet for a course
 
 ## What belongs in each Blackboard course
 
