@@ -29,6 +29,7 @@ These pages provide information that applies across courses. They are maintained
 - `instructor-links.html` — direct links, copy buttons, and embed code
 - `start-here-checklist.html` — Start Here setup guidance and checklist
 - `instructor-tools.html` — Blackboard banner, heading, and other teaching tools
+- `padlet-guide.html` — joining OCTC's Padlet for Schools account, Padlet training, and adding a padlet to a course
 
 ## What belongs in each Blackboard course
 
