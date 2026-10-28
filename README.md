@@ -29,7 +29,10 @@ These pages provide information that applies across courses. They are maintained
 - `instructor-resources.html` — instructor resource hub
 - `instructor-links.html` — direct links, copy buttons, and embed code
 - `start-here-checklist.html` — Start Here setup guidance and checklist
-- `instructor-tools.html` — Blackboard banner, heading, and other teaching tools
+- `instructor-tools.html` — local Blackboard banner and heading makers, plus other teaching tools
+- `course-banner-maker.html` — course banner PNGs in navy or gold; 11 styles
+- `heading-banner-maker.html` — compact level 1, 2, and 3 heading PNGs; 9 styles
+- `banner-tools.css` — shared instructor-tool layout and gallery styles
 - `instructor-padlet.html` — for instructors: joining OCTC's Padlet for Schools account, Padlet training, and setting up a padlet for a course
 
 ## What belongs in each Blackboard course
@@ -42,3 +45,11 @@ Faculty should provide their own welcome, contact information, syllabus, course 
 - Do not add student information or course-specific or instructor-specific details.
 - Check links and instructions before updating a page.
 - Remember that changing a file name or this repository’s name may break links already placed in courses.
+
+## Banner makers
+
+The two makers were adapted from Stephanie Self’s Bb Tools collection and now run in this repository. Their original galleries remain available, with four coordinated additions: Pathfinder (trail lines), Editorial (serif type), Blueprint (a technical grid), and Orbit (circular accents). The earlier Bb_tools repository is unchanged.
+
+Course banners retain their 5:1 shape. Heading graphics retain the slim 120 px level 1 strip and tightly cropped level 2/3 layouts at the standard 1200 px width. All output uses KCTCS blue (#00467F), navy (#011D41), gold (#E7A614), and white. Google Fonts enhance the lettering; system fallback fonts keep the makers functional when those fonts cannot load. Text is rendered in your browser, without uploading it.
+
+When changing either maker, check every style, color/heading level, letter case, long text, PNG export, and alt-text copying at desktop and phone widths. Keep actual Blackboard text headings: a graphic does not create heading structure.
