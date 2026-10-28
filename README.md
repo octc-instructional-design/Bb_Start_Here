@@ -30,9 +30,10 @@ These pages provide information that applies across courses. They are maintained
 - `instructor-links.html` — direct links, copy buttons, and embed code
 - `start-here-checklist.html` — Start Here setup guidance and checklist
 - `instructor-tools.html` — local Blackboard banner and heading makers, plus other teaching tools
-- `course-banner-maker.html` — course banner PNGs in navy or gold; 11 styles
-- `heading-banner-maker.html` — compact level 1, 2, and 3 heading PNGs; 9 styles
+- `course-banner-maker.html` — course banner PNGs in Blue, Gold, or Color Studio; 14 styles
+- `heading-banner-maker.html` — compact level 1, 2, and 3 heading PNGs; 12 styles
 - `banner-tools.css` — shared instructor-tool layout and gallery styles
+- `banner-palettes.js` — coordinated Blue, Gold, and Color Studio artwork palettes
 - `instructor-padlet.html` — for instructors: joining OCTC's Padlet for Schools account, Padlet training, and setting up a padlet for a course
 
 ## What belongs in each Blackboard course
@@ -50,6 +51,6 @@ Faculty should provide their own welcome, contact information, syllabus, course 
 
 The two makers were adapted from Stephanie Self’s Bb Tools collection and now run in this repository. Their original galleries remain available, with four coordinated additions: Pathfinder (trail lines), Editorial (serif type), Blueprint (a technical grid), and Orbit (circular accents). The earlier Bb_tools repository is unchanged.
 
-Course banners retain their 5:1 shape. Heading graphics retain the slim 120 px level 1 strip and tightly cropped level 2/3 layouts at the standard 1200 px width. All output uses KCTCS blue (#00467F), navy (#011D41), gold (#E7A614), and white. Google Fonts enhance the lettering; system fallback fonts keep the makers functional when those fonts cannot load. Text is rendered in your browser, without uploading it.
+Course banners retain their 5:1 shape. Heading graphics retain the slim 120 px level 1 strip and tightly cropped level 2/3 layouts at the standard 1200 px width. The Blue and Gold collections use KCTCS colors. Color Studio provides four less institutional palettes: Lagoon, Plum, Coral, and Forest. Each collection works with every style, including Colorblock, Offset, and Horizon. The heading maker’s Collegiate Accent style uses the selected palette’s accent as its field. Google Fonts enhance the lettering; system fallback fonts keep the makers functional when those fonts cannot load. Text is rendered in your browser, without uploading it.
 
 When changing either maker, check every style, color/heading level, letter case, long text, PNG export, and alt-text copying at desktop and phone widths. Keep actual Blackboard text headings: a graphic does not create heading structure.
