@@ -46,3 +46,11 @@ footer{border-top:1px solid #d8cfb4;margin-top:28px;padding-top:16px;font-size:.
 .sr-only,.home-tab-note{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 @media(max-width:700px){.picks{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.wrap{padding:20px 16px 28px}.fields,.picks,.picks.two{grid-template-columns:minmax(0,1fr)}.plate{padding:8px}h1{font-size:1.5rem}}
+
+/* Output palette selectors: these change the artwork, not the instructor site. */
+.color-modes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+.color-mode,.palette-swatch{display:flex;align-items:flex-start;flex-direction:column;gap:8px;padding:14px;border:2px solid #d8cfb4;border-radius:8px;background:#fff;color:#24313d;font:inherit;text-align:left;cursor:pointer;min-width:0;}
+.color-mode small{font-size:.85rem;color:#52606b;}.color-mode[aria-pressed=true],.palette-swatch[aria-pressed=true]{border-color:#00467f;box-shadow:0 0 0 1px #00467f;}
+.mode-swatch{height:12px;width:100%;border-radius:3px;}.blue-swatch{background:linear-gradient(120deg,#00467f 75%,#e7a614 75%);}.gold-swatch{background:linear-gradient(120deg,#e7a614 75%,#011d41 75%);}.studio-swatch{background:linear-gradient(90deg,#086568 25%,#623b77 25% 50%,#a33948 50% 75%,#285b47 75%);}
+#studio-palettes{margin-top:18px;}[hidden]{display:none!important;}.studio-swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}.palette-swatch{font-size:.9rem;}.palette-swatch span{height:32px;width:100%;border-radius:3px;}#palette-status{margin:12px 0 0;}
+@media(max-width:480px){.color-modes{grid-template-columns:1fr;}.studio-swatches{grid-template-columns:repeat(2,minmax(0,1fr));}}
