@@ -33,6 +33,8 @@ These pages provide information that applies across courses. They are maintained
 - `course-banner-maker.html` — course banner PNGs in Blue, Gold, or Color Studio; 14 styles
 - `heading-banner-maker.html` — compact level 1, 2, and 3 heading PNGs; 12 styles
 - `banner-tools.css` — shared instructor-tool layout and gallery styles
+- `module-icon-maker.html` — numbered circles, module badges, rounded squares, and outline icons
+- `module-icon-maker.js` — local canvas drawing, transparent/white PNG export, and alt-text copying
 - `banner-palettes.js` — coordinated Blue, Gold, and Color Studio artwork palettes
 - `instructor-padlet.html` — for instructors: joining OCTC's Padlet for Schools account, Padlet training, and setting up a padlet for a course
 
@@ -49,8 +51,14 @@ Faculty should provide their own welcome, contact information, syllabus, course 
 
 ## Banner makers
 
-The two makers were adapted from Stephanie Self’s Bb Tools collection and now run in this repository. Their original galleries remain available, with four coordinated additions: Pathfinder (trail lines), Editorial (serif type), Blueprint (a technical grid), and Orbit (circular accents). The earlier Bb_tools repository is unchanged.
+The banner and heading makers were adapted from Stephanie Self’s Bb Tools collection and now run in this repository. Their original galleries remain available, with four coordinated additions: Pathfinder (trail lines), Editorial (serif type), Blueprint (a technical grid), and Orbit (circular accents). The earlier Bb_tools repository is unchanged.
 
 Course banners retain their 5:1 shape. Heading graphics retain the slim 120 px level 1 strip and tightly cropped level 2/3 layouts at the standard 1200 px width. The Blue and Gold collections use KCTCS colors. Color Studio provides four less institutional palettes: Lagoon, Plum, Coral, and Forest. Each collection works with every style, including Colorblock, Offset, and Horizon. The heading maker’s Collegiate Accent style uses the selected palette’s accent as its field. Google Fonts enhance the lettering; system fallback fonts keep the makers functional when those fonts cannot load. Text is rendered in your browser, without uploading it.
 
 When changing either maker, check every style, color/heading level, letter case, long text, PNG export, and alt-text copying at desktop and phone widths. Keep actual Blackboard text headings: a graphic does not create heading structure.
+
+## Module Icon Maker
+
+Create one module, week, or unit icon at a time. Numbered Circle matches the simple ring-and-number example; Module Badge adds a label ribbon. Rounded Square and Outline provide alternate clean treatments. Use up to six characters for the number or short text and an optional label (Module, Week, Unit). Circle is number-only; the other styles display the label when provided.
+
+Blue, Gold, and Color Studio use the same shared palettes as the banner makers. Download 256, 512, or 1024 px square PNGs, with a transparent background by default or an optional white square. The checkerboard is preview-only. Change the number to make a matching set. Icons are drawn locally without uploading the inputs or requiring an image service. Use actual Blackboard text headings and appropriate image alt text.
