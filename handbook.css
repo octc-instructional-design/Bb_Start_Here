@@ -1,6 +1,6 @@
 :root{--book-navy:#011d41;--book-blue:#00467f;--book-gold:#e7a614;--book-paper:#fff;--book-ground:#f4f4f0;--book-rule:#dde2e5;--book-soft:#f5f5f4}
 body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0;align-items:start;background:var(--book-ground);color:#24313d;font:16px/1.6 Arial,Helvetica,sans-serif}
-.handbook-page>main{box-sizing:border-box;min-width:0;width:100%;max-width:1000px;margin:0 auto;background:var(--book-paper);padding:26px clamp(18px,4vw,46px) 36px}
+.handbook-page>main{--book-inset:clamp(18px,4vw,46px);box-sizing:border-box;min-width:0;width:100%;max-width:1000px;margin:0 auto;background:var(--book-paper);padding:26px var(--book-inset) 36px}
 .handbook-page main header h1,.handbook-cover h1{font:700 clamp(2rem,4vw,2.85rem)/1.1 Georgia,serif;letter-spacing:-.026em;color:var(--book-navy);margin:0 0 12px;text-wrap:balance}
 .handbook-page main header .logo{width:min(220px,75%);height:auto}
 .handbook-page main header .home-nav{display:none}
@@ -30,7 +30,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-pager a:hover{text-decoration:underline;background:var(--book-soft)}
 .handbook-pager a span{display:block;font-size:.78rem;font-weight:400;color:#455b6e}
 .handbook-next{grid-column:2;text-align:right}
-.handbook-cover{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--book-blue);border-radius:12px;padding:clamp(16px,2vw,22px);border-top:4px solid var(--book-gold);color:#fff}
+.handbook-cover{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--book-blue);padding:clamp(16px,2vw,22px);border-top:4px solid var(--book-gold);color:#fff}
 .handbook-cover .cover-label{color:var(--book-gold);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;max-width:none}
 .handbook-page main .handbook-cover h1,.handbook-cover h1{color:#fff;margin-bottom:7px}
 .handbook-cover p{margin:0;color:#e4edf6;max-width:56ch}
@@ -54,7 +54,10 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
   .handbook-page>main{min-height:100vh;margin:0 auto}
 }
 @media(max-width:480px){.handbook-cover img{width:68px}.handbook-page>main{padding-top:16px}.handbook-cover p{font-size:.9rem}.handbook-toc li a{gap:5px;grid-template-columns:1.6rem minmax(0,1fr) auto}}
-@media print{body.handbook-page{display:block;background:#fff;padding:0}.handbook-sidebar,.handbook-skip,.handbook-pager{display:none}.handbook-page>main{max-width:none;padding:0}.handbook-cover{background:#fff;color:#000;border:1px solid #777}.handbook-page main .handbook-cover h1,.handbook-cover h1,.handbook-cover .cover-label,.handbook-cover p{color:#000}}
+/* On the TOC, the cover meets the top and sides of the reading surface. */
+.handbook-page>main:has(> .handbook-cover){padding-top:0}
+.handbook-page>main>.handbook-cover{margin-inline:calc(0px - var(--book-inset));padding-inline:var(--book-inset)}
+@media print{body.handbook-page{display:block;background:#fff;padding:0}.handbook-sidebar,.handbook-skip,.handbook-pager{display:none}.handbook-page>main{--book-inset:0px;max-width:none;padding:0}.handbook-page>main>.handbook-cover{padding-inline:16px}.handbook-cover{background:#fff;color:#000;border:1px solid #777}.handbook-page main .handbook-cover h1,.handbook-cover h1,.handbook-cover .cover-label,.handbook-cover p{color:#000}}
 
 /* Short chapter indexes and individual topic pages. */
 .topic-index{margin:26px 0}
