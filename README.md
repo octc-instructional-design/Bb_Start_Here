@@ -1,18 +1,18 @@
 # OCTC Blackboard Start Here
 
-**[Open the OCTC Student Handbook](https://octc-instructional-design.github.io/Bb_Start_Here/)**
+**[Open the Learning Tools & Support](https://octc-instructional-design.github.io/Bb_Start_Here/)**
 
 Shared student resources for Start Here modules in OCTC Blackboard Ultra courses.
 
 These pages provide information that applies across courses. They are maintained in one place so updates can appear in every course that links to or embeds them.
 
-The student handbook has a compact Pathfinder cover and a chapter menu on every student page. Direct chapter addresses and in-page anchors are kept for Blackboard links and embeds. Edit `handbook.js` for chapter order and related topics, `handbook.css` for the reading layout, and `student-resources.html` for the table of contents.
+Learning Tools & Support has a compact Pathfinder cover and a chapter menu on every student page. Direct chapter addresses and in-page anchors are kept for Blackboard links and embeds. Edit `handbook.js` for chapter order and related topics, `handbook.css` for the reading layout, and `student-resources.html` for the table of contents.
 
-[Instructor Resources](https://octc-instructional-design.github.io/Bb_Start_Here/instructor-resources.html) is a separate entry point for faculty guides and course-building tools. It is not linked from the student handbook.
+[Instructor Resources](https://octc-instructional-design.github.io/Bb_Start_Here/instructor-resources.html) is a separate entry point for faculty guides and course-building tools. It is not linked from Learning Tools & Support.
 
 ## Pages
 
-- `student-resources.html` — student handbook cover and table of contents; `index.html` opens this page from the website’s main address
+- `student-resources.html` — Learning Tools & Support cover and table of contents; `index.html` opens this page from the website’s main address
 - `learning-in-blackboard.html` — finding course content, submitting work, discussions, grades, calendars, and Blackboard tutorials
 - `technology-tips.html` — common technology issues and support
 - `padlet.html` — for students: opening a padlet, adding and changing a post, and what not to share

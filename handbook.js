@@ -1,4 +1,4 @@
-/* Navigation for the student handbook. Keep these paths stable for Blackboard links. */
+/* Navigation for the student learning resources. Keep these paths stable for Blackboard links. */
 (() => {
   const groups = [
     ['Learning in Blackboard', 'learning-in-blackboard.html', [
@@ -35,9 +35,9 @@
   };
   const sidebar = element('aside', 'handbook-sidebar');
   const menu = element('details', 'handbook-menu');
-  const summary = element('summary', '', 'Handbook contents');
+  const summary = element('summary', '', 'Learning Tools & Support');
   const nav = element('nav', 'handbook-nav');
-  nav.setAttribute('aria-label', 'Student handbook chapters');
+  nav.setAttribute('aria-label', 'Learning Tools & Support topics');
   const list = element('ol', 'handbook-chapters');
   nav.append(element('div', 'handbook-brand', 'OCTC · START HERE'), link(home, 'handbook-home'));
   groups.forEach(([title, href, children], i) => {
@@ -72,9 +72,9 @@
   if (index !== 0) {
     const chapterIndex = groups.findIndex(([, href, children]) => href === current || children.some(([, child]) => child === current));
     const title = main.querySelector('h1');
-    title?.before(element('p', 'handbook-kicker', 'Chapter ' + String(chapterIndex + 1).padStart(2, '0') + ' · Student Handbook'));
+    title?.before(element('p', 'handbook-kicker', 'Chapter ' + String(chapterIndex + 1).padStart(2, '0') + ' · Learning Tools & Support'));
     const pager = element('nav', 'handbook-pager');
-    pager.setAttribute('aria-label', 'Previous and next handbook pages');
+    pager.setAttribute('aria-label', 'Previous and next topics');
     [sequence[index - 1], sequence[index + 1]].forEach((page, i) => {
       if (!page) return;
       const a = link(page, i ? 'handbook-next' : 'handbook-previous');
