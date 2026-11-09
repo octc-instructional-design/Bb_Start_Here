@@ -34,7 +34,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-cover .cover-label{color:var(--book-gold);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;max-width:none}
 .handbook-page main .handbook-cover h1,.handbook-cover h1{color:#fff;margin-bottom:7px}
 .handbook-cover p{margin:0;color:#e4edf6;max-width:56ch}
-.handbook-cover img{display:block;width:clamp(70px,12vw,104px);height:auto;flex:none;border-radius:10px}
+.handbook-cover img{display:block;width:clamp(84px,13vw,118px);height:auto;flex:none}
 .handbook-toc h2{font-size:1.26rem;color:var(--book-navy);margin:22px 0 7px}
 .handbook-toc ol{list-style:none;padding:0;margin:0;border-top:1px solid var(--book-rule)}
 .handbook-toc li{border-bottom:1px solid var(--book-rule)}
@@ -53,7 +53,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
   .handbook-nav{padding-top:36px}
   .handbook-page>main{min-height:100vh;margin:0 auto}
 }
-@media(max-width:480px){.handbook-cover img{width:68px}.handbook-page>main{padding-top:16px}.handbook-cover p{font-size:.9rem}.handbook-toc li a{gap:5px;grid-template-columns:1.6rem minmax(0,1fr) auto}}
+@media(max-width:480px){.handbook-cover img{width:78px}.handbook-page>main{padding-top:16px}.handbook-cover p{font-size:.9rem}.handbook-toc li a{gap:5px;grid-template-columns:1.6rem minmax(0,1fr) auto}}
 /* On the TOC, the cover meets the top and sides of the reading surface. */
 .handbook-page>main:has(> .handbook-cover){padding-top:0}
 .handbook-page>main>.handbook-cover{margin-inline:calc(0px - var(--book-inset));padding-inline:var(--book-inset)}
