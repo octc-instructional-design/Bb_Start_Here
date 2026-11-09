@@ -1,11 +1,11 @@
-:root{--book-navy:#102947;--book-blue:#00467f;--book-gold:#f3ba45;--book-paper:#fff;--book-ground:#f4f4f0;--book-rule:#dde2e5}
+:root{--book-navy:#011d41;--book-blue:#00467f;--book-gold:#e7a614;--book-paper:#fff;--book-ground:#f4f4f0;--book-rule:#dde2e5}
 body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0;align-items:start;background:var(--book-ground);color:#24313d;font:16px/1.6 Arial,Helvetica,sans-serif}
 .handbook-page>main{box-sizing:border-box;min-width:0;width:100%;max-width:1000px;margin:0 auto;background:var(--book-paper);padding:26px clamp(18px,4vw,46px) 36px}
 .handbook-page>main>header h1,.handbook-cover h1{font:700 clamp(2rem,4vw,2.85rem)/1.1 Georgia,serif;letter-spacing:-.026em;color:var(--book-navy);margin:0 0 12px;text-wrap:balance}
 .handbook-page>main>header .logo{width:min(220px,75%);height:auto}
 .handbook-page>main>header .home-nav{display:none}
 .handbook-page>main>header .handbook-kicker{margin:12px 0 8px;font-size:.74rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--book-blue)}
-.handbook-sidebar{background:var(--book-navy);color:#fff}
+.handbook-sidebar{background:var(--book-blue);color:#fff}
 .handbook-sidebar .handbook-menu{margin:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
 .handbook-sidebar .handbook-menu>summary{margin:0;padding:13px 18px;border:0;border-radius:0;background:transparent;font-weight:700;color:#fff;cursor:pointer}
 .handbook-sidebar .handbook-menu>summary:hover{background:#ffffff14}
@@ -13,6 +13,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-brand{font-weight:700;font-size:.72rem;letter-spacing:.11em;color:var(--book-gold);margin:0 10px 12px}
 .handbook-nav a{color:#fff;text-decoration:none;display:block;padding:8px 10px;border-radius:6px;overflow-wrap:anywhere}
 .handbook-nav a:hover{background:#ffffff14;text-decoration:underline}
+.handbook-chapter:not([aria-current]):hover .handbook-number{color:#fff}
 .handbook-nav a[aria-current=page]{background:#fff;color:var(--book-navy);font-weight:700}
 .handbook-home{font-weight:700;margin-bottom:10px}
 .handbook-chapters,.handbook-topics{list-style:none;margin:0;padding:0}
@@ -29,7 +30,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-pager a:hover{text-decoration:underline;background:#f4f7f9}
 .handbook-pager a span{display:block;font-size:.78rem;font-weight:400;color:#455b6e}
 .handbook-next{grid-column:2;text-align:right}
-.handbook-cover{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--book-navy);border-radius:12px;padding:clamp(16px,2vw,22px);border-top:4px solid var(--book-gold);color:#fff}
+.handbook-cover{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--book-blue);border-radius:12px;padding:clamp(16px,2vw,22px);border-top:4px solid var(--book-gold);color:#fff}
 .handbook-cover .cover-label{color:var(--book-gold);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;max-width:none}
 .handbook-page>main>.handbook-cover h1,.handbook-cover h1{color:#fff;margin-bottom:7px}
 .handbook-cover p{margin:0;color:#e4edf6;max-width:56ch}
