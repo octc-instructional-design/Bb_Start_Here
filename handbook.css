@@ -1,4 +1,4 @@
-:root{--book-navy:#011d41;--book-blue:#00467f;--book-gold:#e7a614;--book-paper:#fff;--book-ground:#f4f4f0;--book-rule:#dde2e5;--book-soft:#f5f5f4}
+:root{--book-navy:#011d41;--book-blue:#00467f;--book-gold:#e7a614;--book-gold-accent:#f2bb24;--book-paper:#fff;--book-ground:#f4f4f0;--book-rule:#dde2e5;--book-soft:#f5f5f4}
 body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0;align-items:start;background:var(--book-ground);color:#24313d;font:16px/1.6 Arial,Helvetica,sans-serif}
 .handbook-page>main{--book-inset:clamp(18px,4vw,46px);box-sizing:border-box;min-width:0;width:100%;max-width:1000px;margin:0 auto;background:var(--book-paper);padding:26px var(--book-inset) 36px}
 .handbook-page main header h1,.handbook-cover h1{font:700 clamp(2rem,4vw,2.85rem)/1.1 Georgia,serif;letter-spacing:-.026em;color:var(--book-navy);margin:0 0 12px;text-wrap:balance}
@@ -30,7 +30,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-pager a:hover{text-decoration:underline;background:var(--book-soft)}
 .handbook-pager a span{display:block;font-size:.78rem;font-weight:400;color:#455b6e}
 .handbook-next{grid-column:2;text-align:right}
-.handbook-cover{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--book-blue);padding:clamp(16px,2vw,22px);border-top:4px solid var(--book-gold);color:#fff}
+.handbook-cover{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--book-blue);padding:clamp(16px,2vw,22px);border-top:4px solid var(--book-gold-accent);color:#fff}
 .handbook-cover .cover-label{color:var(--book-gold);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;max-width:none}
 .handbook-page main .handbook-cover h1,.handbook-cover h1{color:#fff;margin-bottom:7px}
 .handbook-cover p{margin:0;color:#e4edf6;max-width:56ch}
@@ -122,7 +122,7 @@ body.handbook-page main h2,.student-topic main h2{color:var(--book-blue);font-we
 .student-topic-body .video-frame .video{display:block}
 
 /* Shared footer for the student edition. */
-.handbook-footer{box-sizing:border-box;width:100%;max-width:1000px;margin:0 auto;padding:14px clamp(18px,4vw,46px);border-top:3px solid var(--book-gold);background:var(--book-blue);color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;font-size:.82rem;line-height:1.5}
+.handbook-footer{box-sizing:border-box;width:100%;max-width:1000px;margin:0 auto;padding:14px clamp(18px,4vw,46px);border-top:3px solid var(--book-gold-accent);background:var(--book-blue);color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;font-size:.82rem;line-height:1.5}
 .handbook-footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .handbook-footer a:focus-visible{outline:2px solid var(--book-gold);outline-offset:3px}
 .handbook-footer :is(p,.last-updated){margin:0;padding:0;border:0;text-align:inherit;color:inherit;font-size:inherit;line-height:inherit}
@@ -140,7 +140,7 @@ body.handbook-page main h2,.student-topic main h2{color:var(--book-blue);font-we
 .handbook-page main :is(.topic-index,.handbook-toc)>h2,
 body.handbook-page :where(main,main section:not(.help,.must-know),main .student-topic-body,main .habit-title)>h2{
   padding:9px 12px;
-  border-inline-start:3px solid var(--book-gold);background:var(--book-soft);
+  border-inline-start:3px solid var(--book-gold-accent);background:var(--book-soft);
   color:var(--book-blue);font:700 clamp(1.32rem,2.1vw,1.5rem)/1.25 Arial,Helvetica,sans-serif;
   text-wrap:balance
 }
@@ -167,6 +167,6 @@ body.handbook-page :where(main,main section:not(.help,.must-know),main .student-
 .support-tile .contact{margin-top:8px;overflow-wrap:anywhere}
 .support-tile .contact p{margin:0}
 .student-topic main :is(.support-tile a,.support-tile summary):focus-visible{outline:2px solid var(--book-blue);outline-offset:3px}
-.support-course-note{padding:12px 16px;border-inline-start:3px solid var(--book-gold);background:#fff8e7}
+.support-course-note{padding:12px 16px;border-inline-start:3px solid var(--book-gold-accent);background:#fff8e7}
 .support-course-note p{margin:0}
 @media(max-width:570px){.support-grid{grid-template-columns:1fr}}
