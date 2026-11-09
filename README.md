@@ -37,6 +37,7 @@ Learning in Blackboard, Technology Tips & Help, Study & Stay on Track, and Commu
 - `student-support.html` — tutoring, advising, accessibility, counseling, and other support
 - `essential-skills.html` — Kentucky’s 10 Essential Skills
 - `ai-literacy.html` — AI overview: the AI use labels, the 3 Qs, Keep a trail, the five BE behaviors, and AI tools; direct section link for Keep a trail: `ai-literacy.html#trail`
+- `ai-tools-for-students.html` — quick comparison of Copilot Chat, ChatGPT, Claude, and Gemini
 - `ai-before-you-ask.html`, `ai-before-you-use-it.html`, `ai-before-you-turn-it-in.html`, `ai-keep-a-trail.html` — the detail layer under the AI overview, one page per question plus Keep a trail, for instructors to link from assignment directions
 
 **AI wording:** the AI pages use the shared language also used in the FYE 100 Pathfinder Guidebook and the AI Literacy Playbook: the AI use labels (No AI, AI-supported, AI-integrated), the 3 Qs with their moment names, the five BE behaviors, Keep a trail, and AI Course Policy. Change that wording in all three places together.

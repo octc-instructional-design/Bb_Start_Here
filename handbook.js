@@ -7,7 +7,7 @@
     ["Communicate & Participate","communicate-participate.html",[["Classroom Participation","classroom-participation.html"],["Netiquette","netiquette.html"],["Discussion Boards","discussion-boards.html"],["Email Your Instructor","email-your-instructor.html"],["Report Problems Early","report-course-problems.html"],["Give Useful Course Feedback","give-course-feedback.html"]]],
     ["Technology Tips & Help","technology-tips.html",[["Browser Troubleshooting","browser-troubleshooting.html"],["Chromebook Tips","chromebook-tips.html"],["Textbooks & Course Materials","textbooks-course-materials.html"],["Publisher & Ebook Support","publisher-support.html"],["Microsoft 365 Help","microsoft-365-help.html"],["Google Files to Blackboard","google-files-for-blackboard.html"],["Recording and Submitting Video","recording-tools.html"],["Respondus LockDown Browser","respondus-lockdown-browser.html"],["Using Padlet","padlet.html"]]],
     ["Student Support","student-support.html",[]],
-    ["AI Literacy","ai-literacy.html",[["Before you ask","ai-before-you-ask.html"],["Before you use it","ai-before-you-use-it.html"],["Before you turn it in","ai-before-you-turn-it-in.html"],["Keep a trail of your work","ai-keep-a-trail.html"]]],
+    ["AI Literacy","ai-literacy.html",[["Before you ask","ai-before-you-ask.html"],["Before you use it","ai-before-you-use-it.html"],["Before you turn it in","ai-before-you-turn-it-in.html"],["Keep a trail of your work","ai-keep-a-trail.html"],["AI Tools for Students","ai-tools-for-students.html"]]],
     ["Skills for Life & Work","essential-skills.html",[]],
     ['Plan Your Transfer', 'https://kctcs.edu/education-training/transfer/', []]
   ];
@@ -105,10 +105,8 @@
   const footer = element('footer', 'handbook-footer');
   const feedback = element('p', 'handbook-footer-feedback', 'Suggest an addition or correction: ');
   const priorFeedback = main.querySelector('.resource-feedback');
-  const contact = priorFeedback?.querySelector('a') || link([
-    'email Stephanie Self',
-    'mailto:stephanie.self@kctcs.edu?subject=Student%20Resources%20suggestion%20or%20correction'
-  ]);
+  const subject = 'OCTC Learning Tools & Support — Suggestion or Correction';
+  const contact = link(['email Stephanie Self', 'mailto:stephanie.self@kctcs.edu?subject=' + encodeURIComponent(subject)]);
   feedback.append(contact, '.');
   priorFeedback?.remove();
   const version = element('p', 'handbook-version', 'VERSION: Fall 2026');
