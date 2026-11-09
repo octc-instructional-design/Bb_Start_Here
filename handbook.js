@@ -3,6 +3,7 @@
   const groups = [
     ["Learning in Blackboard","learning-in-blackboard.html",[["Ally alternative formats","ally-alternative-formats.html"]]],
     ["Study & Stay on Track","study-stay-on-track.html",[["Make Online Learning Work for You","online-learning-success.html"],["Plan Your Week","plan-your-week.html"],["Understand Your Grades","understand-your-grades.html"],["Use Sources and Tools Responsibly","use-sources-responsibly.html"],["Citation Help: MLA or APA?","citation-help.html"]]],
+    ["Library & Research", "library-research.html", []],
     ["Communicate & Participate","communicate-participate.html",[["Classroom Participation","classroom-participation.html"],["Netiquette","netiquette.html"],["Discussion Boards","discussion-boards.html"],["Email Your Instructor","email-your-instructor.html"],["Report Problems Early","report-course-problems.html"],["Give Useful Course Feedback","give-course-feedback.html"]]],
     ["Technology Tips & Help","technology-tips.html",[["Browser Troubleshooting","browser-troubleshooting.html"],["Chromebook Tips","chromebook-tips.html"],["Textbooks & Course Materials","textbooks-course-materials.html"],["Publisher & Ebook Support","publisher-support.html"],["Microsoft 365 Help","microsoft-365-help.html"],["Google Files to Blackboard","google-files-for-blackboard.html"],["Recording and Submitting Video","recording-tools.html"],["Respondus LockDown Browser","respondus-lockdown-browser.html"],["Using Padlet","padlet.html"]]],
     ["Student Support","student-support.html",[]],
@@ -70,6 +71,23 @@
   skip.href = '#' + main.id;
   document.body.prepend(skip, sidebar);
   document.body.classList.add('handbook-page');
+  if (index !== 0) {
+    const header = main.querySelector('header');
+    if (header) {
+      const backHome = link(['Home', home[1]], 'handbook-home-link');
+      backHome.setAttribute('aria-label', 'Home: Learning Tools & Support');
+      const ns = 'http://www.w3.org/2000/svg';
+      const icon = document.createElementNS(ns, 'svg');
+      icon.setAttribute('viewBox', '0 0 24 24');
+      icon.setAttribute('aria-hidden', 'true');
+      icon.setAttribute('focusable', 'false');
+      const outline = document.createElementNS(ns, 'path');
+      outline.setAttribute('d', 'm3 10 9-7 9 7M5 9v12h5v-6h4v6h5V9');
+      icon.append(outline);
+      backHome.prepend(icon);
+      header.prepend(backHome);
+    }
+  }
   if (index > 0) {
     const chapterIndex = groups.findIndex(([, href, children]) => href === current || children.some(([, child]) => child === current));
     const title = main.querySelector('h1');

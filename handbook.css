@@ -98,3 +98,12 @@ main > .sheet{background:var(--book-paper);border:0;border-radius:0;box-shadow:n
 .handbook-page main :is(.topic-index,.handbook-toc) :is(ul,ol){border-top:0}
 .handbook-page main :is(.topic-index,.handbook-toc) li:last-child{border-bottom:0}
 .handbook-page main :is(.topic-index,.handbook-toc) li a:focus-visible{outline:2px solid var(--book-blue);outline-offset:2px}
+
+/* A quick return to the TOC on student pages. */
+.handbook-page main header:has(> .handbook-home-link){position:relative}
+.handbook-page main header:has(> .handbook-home-link) .logo{width:min(220px,calc(100% - 88px))}
+.handbook-page main header > .handbook-home-link{position:absolute;inset-block-start:0;inset-inline-end:0;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 4px;color:var(--book-blue);font-size:.875rem;font-weight:700;text-decoration:none}
+.handbook-home-link svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.handbook-page main header > .handbook-home-link:hover{text-decoration:underline}
+.handbook-page main header > .handbook-home-link:focus-visible{outline:2px solid var(--book-blue);outline-offset:2px}
+@media print{.handbook-page main header > .handbook-home-link{display:none}}

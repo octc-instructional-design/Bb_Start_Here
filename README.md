@@ -12,6 +12,8 @@ Learning Tools & Support has a compact Pathfinder cover and a chapter menu on ev
 
 ## Pages
 
+- `library-research.html` — start research, find library services, and connect with the Teaching and Learning Center
+
 Technology Tips & Help, Study & Stay on Track, and Communicate & Participate are topic indexes. The former Academic Success & Communication index remains available for older Blackboard links. Add a topic as its own page, then link to it from the index and add it to that chapter’s list in `handbook.js`. Use an existing topic page as a template. Keep existing index IDs and topic URLs for bookmarked Blackboard links.
 
 
