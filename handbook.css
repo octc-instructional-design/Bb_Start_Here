@@ -10,7 +10,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-sidebar .handbook-menu>summary{margin:0;padding:13px 18px;border:0;border-radius:0;background:transparent;font-weight:700;color:#fff;cursor:pointer}
 .handbook-sidebar .handbook-menu>summary:hover{background:#ffffff14}
 .handbook-nav{padding:12px 16px 22px;font:15px/1.4 Arial,Helvetica,sans-serif}
-.handbook-brand{font-weight:700;font-size:.72rem;letter-spacing:.11em;color:var(--book-gold);margin:0 10px 12px}
+.handbook-brand{font-weight:700;font-size:.72rem;letter-spacing:.11em;color:var(--book-gold-accent);margin:0 10px 12px}
 .handbook-nav a{color:#fff;text-decoration:none;display:block;padding:8px 10px;border-radius:6px;overflow-wrap:anywhere}
 .handbook-nav a:hover{background:#ffffff14;text-decoration:underline}
 .handbook-chapter:not([aria-current]):hover .handbook-number{color:#fff}
@@ -19,7 +19,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-chapters,.handbook-topics{list-style:none;margin:0;padding:0}
 .handbook-group{margin:0 0 4px}
 .handbook-nav .handbook-chapter{display:grid;grid-template-columns:1.7rem 1fr;gap:4px;align-items:baseline}
-.handbook-number{font-size:.72rem;font-weight:700;letter-spacing:.04em;color:var(--book-gold);font-variant-numeric:tabular-nums}
+.handbook-number{font-size:.72rem;font-weight:700;letter-spacing:.04em;color:var(--book-gold-accent);font-variant-numeric:tabular-nums}
 .handbook-chapter[aria-current=page] .handbook-number{color:var(--book-blue)}
 .handbook-topics{margin:3px 0 8px 21px;border-left:1px solid #ffffff40;padding-left:6px;font-size:.86rem}
 .handbook-sidebar a:focus-visible,.handbook-menu summary:focus-visible{outline:2px solid var(--book-gold);outline-offset:2px}
@@ -31,7 +31,7 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .handbook-pager a span{display:block;font-size:.78rem;font-weight:400;color:#455b6e}
 .handbook-next{grid-column:2;text-align:right}
 .handbook-cover{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--book-blue);padding:clamp(16px,2vw,22px);border-top:4px solid var(--book-gold-accent);color:#fff}
-.handbook-cover .cover-label{color:var(--book-gold);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;max-width:none}
+.handbook-cover .cover-label{color:var(--book-gold-accent);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;max-width:none}
 .handbook-page main .handbook-cover h1,.handbook-cover h1{color:#fff;margin-bottom:7px}
 .handbook-cover p{margin:0;color:#e4edf6;max-width:56ch}
 .handbook-cover img{display:block;width:clamp(84px,13vw,118px);height:auto;flex:none}
