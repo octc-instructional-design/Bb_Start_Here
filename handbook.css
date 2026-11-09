@@ -135,27 +135,22 @@ body.handbook-page main h2,.student-topic main h2{color:var(--book-blue);font-we
 }
 @media print{.handbook-footer{display:block;background:#fff;color:#000;padding-inline:0}}
 
-/* Chapter indexes: a clear section label above darker list text. */
-.handbook-page main :is(.topic-index,.handbook-toc)>h2{
-  margin:0 0 8px;padding:9px 12px;
+/* Shared heading band for chapter indexes and reading sections.
+   Callouts and card headings keep their separate hierarchy. */
+.handbook-page main :is(.topic-index,.handbook-toc)>h2,
+body.handbook-page :where(main,main section:not(.help,.must-know),main .student-topic-body,main .habit-title)>h2{
+  padding:9px 12px;
   border-inline-start:3px solid var(--book-gold);background:var(--book-soft);
   color:var(--book-blue);font:700 clamp(1.32rem,2.1vw,1.5rem)/1.25 Arial,Helvetica,sans-serif;
   text-wrap:balance
 }
+.handbook-page main :is(.topic-index,.handbook-toc)>h2{margin:0 0 8px}
+.handbook-page main :where(.student-topic-body)>h2{margin-block:1.4em .45em}
 .handbook-page main :is(.topic-index,.handbook-toc){margin-block:28px}
 .handbook-page main :is(.topic-index,.handbook-toc) li a,
 .handbook-page main :is(.topic-index,.handbook-toc) li small{color:#1b1f23}
 .handbook-page main :is(.topic-index,.handbook-toc) li a:hover{background:#f6f9fc}
 .handbook-page main :is(.topic-index,.handbook-toc) li a:focus-visible{outline-offset:-2px}
-
-/* Prose sections use a smaller marker. Cards and callouts keep their own hierarchy. */
-.handbook-page main :where(.student-topic-body)>h2,
-.handbook-page main :where(.student-topic-body,.sheet, .ai-tool-list)>section:not(:where(.help))>h2,
-.handbook-page main :where(.detail-section,.guide-section,.qs-section,.trail-section,.be-section,.explore-more,.more-habits,.habit-title)>h2{
-  padding-inline-start:.55em;border-inline-start:3px solid var(--book-gold);
-  font-family:Arial,Helvetica,sans-serif
-}
-.handbook-page main :where(.student-topic-body)>h2{margin-block:1.4em .45em}
 
 /* Student Support tiles keep the main action separate from contact details. */
 .support-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-block:14px 20px}
