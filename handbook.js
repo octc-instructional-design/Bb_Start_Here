@@ -9,7 +9,8 @@
     ["Student Support","student-support.html",[]],
     ["AI Literacy","ai-literacy.html",[["Before you ask","ai-before-you-ask.html"],["Before you use it","ai-before-you-use-it.html"],["Before you turn it in","ai-before-you-turn-it-in.html"],["Keep a trail of your work","ai-keep-a-trail.html"],["AI Tools for Students","ai-tools-for-students.html"]]],
     ["Skills for Life & Work","essential-skills.html",[]],
-    ['Plan Your Transfer', 'https://kctcs.edu/education-training/transfer/', []]
+    ['Plan Your Transfer', 'https://kctcs.edu/education-training/transfer/', []],
+    ['Student Wellness', 'student-wellness.html', []]
   ];
   const home = ['Table of Contents', 'student-resources.html'];
   const sequence = [home, ...groups.filter(([, href]) => !href.startsWith('https://')).flatMap(([title, href, children]) => [[title, href], ...children])];

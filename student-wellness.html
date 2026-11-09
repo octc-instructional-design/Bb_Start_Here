@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Wellness | OCTC</title>
+<link rel="stylesheet" href="handbook.css">
+<script src="handbook.js" defer></script>
+<script src="last-updated.js" defer></script>
+<style>
+.wellness-content{max-width:76ch}
+.wellness-content section+section{margin-top:2rem}
+.wellness-wheel{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);align-items:center;gap:16px;margin:14px 0}
+.wellness-wheel svg{display:block;width:100%;max-width:240px;height:auto;margin:auto;font:700 17px Arial,sans-serif;fill:#172e43}
+.wellness-wheel .wheel-label{font-size:14px}
+.wellness-wheel ol,.wellness-batteries{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.wellness-wheel li,.wellness-batteries li{margin:0}
+.wellness-wheel li{display:grid;grid-template-columns:1.75rem minmax(0,1fr);align-items:baseline;gap:8px;line-height:1.4}
+.wheel-number{border-radius:50%;text-align:center;line-height:1.75rem;background:var(--well-color);font-weight:bold;color:#172e43}
+.wellness-wheel li span small{display:block;font-size:.91rem}
+.wellness-batteries{grid-template-columns:repeat(auto-fit,minmax(min(100%,185px),1fr));gap:10px}
+.wellness-batteries li{padding:12px;background:#f7f8fa;border-block-start:5px solid var(--well-color);border-radius:6px}
+.wellness-batteries strong{display:block;color:var(--book-blue)}
+.wellness-step{background:#fff3d7;border-inline-start:3px solid var(--book-gold);padding:12px 15px}
+.wellness-help{padding:14px 16px;background:#e9f4f1;border-inline-start:4px solid #307c70;border-radius:0 6px 6px 0}
+.wellness-help p{margin:0 0 10px}
+.student-topic main .wellness-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:5px;background:var(--book-blue);color:white;font-weight:bold}
+@media(max-width:600px){.wellness-wheel{grid-template-columns:1fr}.wellness-wheel svg{max-width:200px}}
+@media print{.student-topic main .wellness-cta{background:none;color:#000;padding:0}}
+</style>
+</head>
+<body class="student-topic">
+<main>
+<header>
+<img class="logo" src="assets/octc-student-logo.png" width="1551" height="260" alt="Owensboro Community &amp; Technical College">
+<h1>Student Wellness</h1>
+<p>Take two minutes to check in with yourself. Notice what needs attention, see what’s draining your energy, and choose one small next step. There’s nothing to score or submit.</p>
+<p><a href="#find-support">Looking for support? Go straight to OCTC resources.</a></p>
+</header>
+<article class="student-topic-body wellness-content">
+<section aria-labelledby="wellness-wheel">
+<h2 id="wellness-wheel">1. Notice what needs attention</h2>
+<p>The Wellness Wheel is a quick look at eight parts of life. Which area is going well? Which could use a little attention today?</p>
+<div class="wellness-wheel">
+  <svg viewBox="0 0 240 240" width="240" height="240" aria-hidden="true" focusable="false">
+    <path d="M 120.00 8.00 A 112 112 0 0 1 199.20 40.80 L 158.18 81.82 A 54 54 0 0 0 120.00 66.00 Z" fill="#f4b3be" stroke="#fff" stroke-width="3"/><text x="151.76" y="43.32" text-anchor="middle" dominant-baseline="central">1</text>
+    <path d="M 199.20 40.80 A 112 112 0 0 1 232.00 120.00 L 174.00 120.00 A 54 54 0 0 0 158.18 81.82 Z" fill="#f6cc76" stroke="#fff" stroke-width="3"/><text x="196.68" y="88.24" text-anchor="middle" dominant-baseline="central">2</text>
+    <path d="M 232.00 120.00 A 112 112 0 0 1 199.20 199.20 L 158.18 158.18 A 54 54 0 0 0 174.00 120.00 Z" fill="#a7d9a1" stroke="#fff" stroke-width="3"/><text x="196.68" y="151.76" text-anchor="middle" dominant-baseline="central">3</text>
+    <path d="M 199.20 199.20 A 112 112 0 0 1 120.00 232.00 L 120.00 174.00 A 54 54 0 0 0 158.18 158.18 Z" fill="#93d8cd" stroke="#fff" stroke-width="3"/><text x="151.76" y="196.68" text-anchor="middle" dominant-baseline="central">4</text>
+    <path d="M 120.00 232.00 A 112 112 0 0 1 40.80 199.20 L 81.82 158.18 A 54 54 0 0 0 120.00 174.00 Z" fill="#9fcce9" stroke="#fff" stroke-width="3"/><text x="88.24" y="196.68" text-anchor="middle" dominant-baseline="central">5</text>
+    <path d="M 40.80 199.20 A 112 112 0 0 1 8.00 120.00 L 66.00 120.00 A 54 54 0 0 0 81.82 158.18 Z" fill="#b8b5ed" stroke="#fff" stroke-width="3"/><text x="43.32" y="151.76" text-anchor="middle" dominant-baseline="central">6</text>
+    <path d="M 8.00 120.00 A 112 112 0 0 1 40.80 40.80 L 81.82 81.82 A 54 54 0 0 0 66.00 120.00 Z" fill="#d9b5e8" stroke="#fff" stroke-width="3"/><text x="43.32" y="88.24" text-anchor="middle" dominant-baseline="central">7</text>
+    <path d="M 40.80 40.80 A 112 112 0 0 1 120.00 8.00 L 120.00 66.00 A 54 54 0 0 0 81.82 81.82 Z" fill="#f3bba0" stroke="#fff" stroke-width="3"/><text x="88.24" y="43.32" text-anchor="middle" dominant-baseline="central">8</text>
+    <text class="wheel-label" x="120" y="116" text-anchor="middle">Wellness<tspan x="120" dy="18">Wheel</tspan></text>
+  </svg>
+  <ol role="list">
+    <li style="--well-color:#f4b3be"><span class="wheel-number" aria-hidden="true">1</span><span><strong>Emotional</strong><small>Handling feelings and stress</small></span></li>
+    <li style="--well-color:#f6cc76"><span class="wheel-number" aria-hidden="true">2</span><span><strong>Physical</strong><small>Sleep, food, movement, and rest</small></span></li>
+    <li style="--well-color:#a7d9a1"><span class="wheel-number" aria-hidden="true">3</span><span><strong>Social</strong><small>Connection and belonging</small></span></li>
+    <li style="--well-color:#93d8cd"><span class="wheel-number" aria-hidden="true">4</span><span><strong>Financial</strong><small>Money and basic needs</small></span></li>
+    <li style="--well-color:#9fcce9"><span class="wheel-number" aria-hidden="true">5</span><span><strong>Occupational</strong><small>Work and career direction</small></span></li>
+    <li style="--well-color:#b8b5ed"><span class="wheel-number" aria-hidden="true">6</span><span><strong>Intellectual</strong><small>Learning and curiosity</small></span></li>
+    <li style="--well-color:#d9b5e8"><span class="wheel-number" aria-hidden="true">7</span><span><strong>Environmental</strong><small>The spaces you spend time in</small></span></li>
+    <li style="--well-color:#f3bba0"><span class="wheel-number" aria-hidden="true">8</span><span><strong>Spiritual</strong><small>Meaning, values, or purpose</small></span></li>
+  </ol>
+</div>
+</section>
+<section aria-labelledby="energy-batteries">
+<h2 id="energy-batteries">2. Check your energy batteries</h2>
+<p>Picture five batteries. Which feels charged? Which is running low? Pick one and think about what’s draining it and what might help you recharge.</p>
+<ul class="wellness-batteries" role="list">
+  <li style="--well-color:#f6cc76"><strong>Physical</strong>What would help my body feel more rested or fueled?</li>
+  <li style="--well-color:#9fcce9"><strong>Mental</strong>What could I write down or set aside so I can focus on one thing?</li>
+  <li style="--well-color:#f4b3be"><strong>Emotional</strong>What am I carrying, and who could I talk it through with?</li>
+  <li style="--well-color:#93d8cd"><strong>Social</strong>Would a little connection or a little quiet help today?</li>
+  <li style="--well-color:#d9b5e8"><strong>Spiritual</strong>What helps me reconnect with what matters to me?</li>
+</ul>
+</section>
+<section aria-labelledby="next-step">
+<h2 id="next-step">3. Choose one small next step</h2>
+<p class="wellness-step"><strong>Try this:</strong> “The area I want to give some attention to is ____. One thing I can do today is ____.”</p>
+<p>That might mean taking a real break, texting someone you trust, or asking for help with one thing that feels heavy.</p>
+<h3>Make your goal doable</h3>
+<ul>
+<li><strong>Pick one action you can control.</strong> “Take a 10-minute walk” gives you somewhere to start. “Be less stressed” doesn’t tell you what to do next.</li>
+<li><strong>Give it a time or cue.</strong> “After my last class today, I’ll walk for 10 minutes before I head home.”</li>
+<li><strong>Make a smaller backup plan.</strong> If 10 minutes won’t fit, take a two-minute stretch break. Then ask: Did it help? What would I change next time?</li>
+</ul>
+</section>
+<section aria-labelledby="find-support">
+<h2 id="find-support">Find support at OCTC</h2>
+<div class="wellness-help">
+<p>If stress or a personal concern is making school harder, the OCTC Counseling Center is a place to start. You can reach out before it feels urgent.</p>
+<p><a class="wellness-cta" href="https://owensboro.kctcs.edu/current-students/counseling-center/index.aspx" target="_blank" rel="noopener noreferrer">Visit the OCTC Counseling Center<span class="sr-only"> (opens in a new tab)</span></a></p>
+<p>For food, housing, transportation, or other practical needs, see the <a href="student-support.html">Student Support directory</a>.</p>
+</div>
+</section>
+<p class="small">Adapted from the FYE 100 Pathfinder Guidebook: <a href="https://octc-instructional-design.github.io/FYE100-pathfinder-guidebook/chapters/ch05/5-2.html#dimensions" target="_blank" rel="noopener noreferrer">the eight dimensions of wellness<span class="sr-only"> (opens in a new tab)</span></a> and <a href="https://octc-instructional-design.github.io/FYE100-pathfinder-guidebook/chapters/ch03/3-5.html#batteries" target="_blank" rel="noopener noreferrer">the five energy batteries<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+</article>
+<p class="last-updated" data-last-updated>LAST UPDATED: <time datetime="2026-11-09">November 9, 2026</time></p>
+</main>
+</body>
+</html>
