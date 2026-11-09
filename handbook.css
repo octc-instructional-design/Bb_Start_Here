@@ -54,3 +54,29 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 }
 @media(max-width:480px){.handbook-cover img{width:68px}.handbook-page>main{padding-top:16px}.handbook-cover p{font-size:.9rem}.handbook-toc li a{gap:5px;grid-template-columns:1.6rem minmax(0,1fr) auto}}
 @media print{body.handbook-page{display:block;background:#fff;padding:0}.handbook-sidebar,.handbook-skip,.handbook-pager{display:none}.handbook-page>main{max-width:none;padding:0}.handbook-cover{background:#fff;color:#000;border:1px solid #777}.handbook-page>main>.handbook-cover h1,.handbook-cover h1,.handbook-cover .cover-label,.handbook-cover p{color:#000}}
+
+/* Short chapter indexes and individual topic pages. */
+.topic-index{margin:26px 0}
+.topic-index h2{font-size:1.15rem;margin:0 0 8px;color:var(--book-navy)}
+.topic-index ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--book-rule)}
+.topic-index li{margin:0;border-bottom:1px solid var(--book-rule);scroll-margin-top:12px}
+.topic-index li:target{background:#fff8e7}
+.topic-index li a{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:10px 6px;text-decoration:none;color:var(--book-navy)}
+.topic-index li a:hover{background:#f4f7f9}
+.topic-index li a:hover strong{text-decoration:underline}
+.topic-index strong,.topic-index small{display:block}
+.topic-index small{font-size:.88rem;line-height:1.45;color:#455b6e}
+.student-topic{margin:0;background:var(--book-ground);color:#24313d;font:16px/1.6 Arial,Helvetica,sans-serif}
+.student-topic:not(.handbook-page) main{max-width:850px;margin:auto;padding:24px;background:#fff}
+.student-topic header .logo{width:min(220px,75%);height:auto}
+.student-topic .topic-back{font-size:.88rem;margin:10px 0 0}
+.student-topic main a{color:var(--book-blue);text-underline-offset:3px}
+.student-topic h2{font-size:1.16rem;color:var(--book-navy);margin:24px 0 6px}
+.student-topic-body{max-width:72ch}
+.student-topic-body li+li{margin-top:7px}
+.student-topic-body .video{width:100%;aspect-ratio:16/9;height:auto;border:0}
+.student-topic-body .email-sample{background:#f4f7f9;border:1px solid var(--book-rule);border-radius:8px;padding:12px 16px}
+.student-topic .last-updated,.student-topic .small{font-size:.88rem;color:#455b6e}
+.student-topic .last-updated{text-align:right;margin-top:28px}
+.student-topic .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:849px){.handbook-menu[open] .handbook-nav{max-height:65vh;overflow-y:auto}}

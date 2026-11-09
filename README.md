@@ -12,6 +12,9 @@ Learning Tools & Support has a compact Pathfinder cover and a chapter menu on ev
 
 ## Pages
 
+Technology Tips & Help and Academic Success & Communication are topic indexes. Add a topic as its own page, then link to it from the index and add it to that chapter’s list in `handbook.js`. Use an existing topic page as a template. Keep existing index IDs and topic URLs for bookmarked Blackboard links.
+
+
 - `student-resources.html` — Learning Tools & Support cover and table of contents; `index.html` opens this page from the website’s main address
 - `learning-in-blackboard.html` — finding course content, submitting work, discussions, grades, calendars, and Blackboard tutorials
 - `technology-tips.html` — common technology issues and support

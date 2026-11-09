@@ -1,13 +1,9 @@
 /* Navigation for the student learning resources. Keep these paths stable for Blackboard links. */
 (() => {
   const groups = [
-    ['Learning in Blackboard', 'learning-in-blackboard.html', [
-      ['Using Padlet', 'padlet.html'], ['Ally alternative formats', 'ally-alternative-formats.html']]],
-    ['Technology Tips & Help', 'technology-tips.html', [
-      ['Chromebook tips', 'chromebook-tips.html'], ['Google Files to Blackboard', 'google-files-for-blackboard.html'],
-      ['Recording and submitting video', 'recording-tools.html'], ['Respondus LockDown Browser', 'respondus-lockdown-browser.html']]],
-    ['Academic Success & Communication', 'academic-success.html', [
-      ['Make online learning work for you', 'online-learning-success.html'], ['Citation help: MLA or APA?', 'citation-help.html']]],
+    ["Learning in Blackboard", "learning-in-blackboard.html", [["Ally alternative formats", "ally-alternative-formats.html"]]],
+    ["Technology Tips & Help", "technology-tips.html", [["Browser Troubleshooting", "browser-troubleshooting.html"], ["Chromebook Tips", "chromebook-tips.html"], ["Textbooks & Course Materials", "textbooks-course-materials.html"], ["Publisher & Ebook Support", "publisher-support.html"], ["Microsoft 365 Help", "microsoft-365-help.html"], ["Google Files to Blackboard", "google-files-for-blackboard.html"], ["Recording and Submitting Video", "recording-tools.html"], ["Respondus LockDown Browser", "respondus-lockdown-browser.html"], ["Using Padlet", "padlet.html"]]],
+    ["Academic Success & Communication", "academic-success.html", [["Plan Your Week", "plan-your-week.html"], ["Make Online Learning Work for You", "online-learning-success.html"], ["Understand Your Grades", "understand-your-grades.html"], ["Classroom Participation", "classroom-participation.html"], ["Netiquette", "netiquette.html"], ["Discussion Boards", "discussion-boards.html"], ["Email Your Instructor", "email-your-instructor.html"], ["Report Problems Early", "report-course-problems.html"], ["Give Useful Course Feedback", "give-course-feedback.html"], ["Use Sources and Tools Responsibly", "use-sources-responsibly.html"], ["Citation Help: MLA or APA?", "citation-help.html"]]],
     ['Student Support', 'student-support.html', []],
     ['Skills for Life & Work', 'essential-skills.html', []],
     ['AI Literacy', 'ai-literacy.html', [
