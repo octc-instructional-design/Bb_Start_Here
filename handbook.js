@@ -8,10 +8,11 @@
     ['Skills for Life & Work', 'essential-skills.html', []],
     ['AI Literacy', 'ai-literacy.html', [
       ['Before you ask', 'ai-before-you-ask.html'], ['Before you use it', 'ai-before-you-use-it.html'],
-      ['Before you turn it in', 'ai-before-you-turn-it-in.html'], ['Keep a trail of your work', 'ai-keep-a-trail.html']]]
+      ['Before you turn it in', 'ai-before-you-turn-it-in.html'], ['Keep a trail of your work', 'ai-keep-a-trail.html']]],
+    ['Plan Your Transfer', 'https://kctcs.edu/education-training/transfer/', []]
   ];
   const home = ['Table of Contents', 'student-resources.html'];
-  const sequence = [home, ...groups.flatMap(([title, href, children]) => [[title, href], ...children])];
+  const sequence = [home, ...groups.filter(([, href]) => !href.startsWith('https://')).flatMap(([title, href, children]) => [[title, href], ...children])];
   const current = location.pathname.split('/').pop();
   const index = sequence.findIndex(([, href]) => href === current);
   const main = document.querySelector('main');
@@ -26,6 +27,11 @@
   const link = ([title, href], className) => {
     const a = element('a', className, title);
     a.href = href;
+    if (href.startsWith('https://')) {
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.setAttribute('aria-label', title + ' (opens in a new tab)');
+    }
     if (href === current) a.setAttribute('aria-current', 'page');
     return a;
   };
