@@ -7,6 +7,20 @@
 <link rel="stylesheet" href="handbook.css">
 <script src="handbook.js" defer></script>
 <script src="last-updated.js" defer></script>
+<style>
+.discussion-guide{max-width:none;container-type:inline-size}
+.discussion-guide>h2,.discussion-guide>ul,.discussion-guide>p{max-width:72ch}
+.discussion-opening{display:grid;gap:16px;margin-bottom:1.5rem;align-items:start}
+.discussion-opening>div{max-width:72ch}
+.discussion-opening>div>p:first-child{margin-top:0}
+.discussion-opening>div>ul{margin-bottom:0}
+.discussion-coaching{background:#edf5fb;border-radius:8px;padding:16px}
+.student-topic .discussion-coaching h2{margin:0 0 8px;color:var(--book-blue);font-size:1.16rem;line-height:1.3}
+.discussion-coaching p{margin:0 0 10px}
+.discussion-coaching p:last-child{margin:0}
+@container (min-width:620px){.discussion-opening{grid-template-columns:minmax(0,1fr) minmax(235px,32%);gap:24px}}
+@media print{.discussion-opening{display:block}.discussion-coaching{margin-top:12px}}
+</style>
 </head>
 <body class="student-topic">
 <main>
@@ -15,14 +29,22 @@
 <p class="topic-back"><a href="communicate-participate.html">← Communicate &amp; Participate</a></p>
 <h1>Discussion Boards</h1>
 </header>
-<article class="student-topic-body">
+<article class="student-topic-body discussion-guide">
+<div class="discussion-opening">
+<div>
 <p>A discussion works best when you give classmates something to think about and respond to. Follow your instructor’s prompt, rubric, and posting deadlines first.</p>
 <ul>
 <li><strong>Explain your thinking.</strong> Answer the prompt and connect your ideas to a reading, a specific example, or an experience. Cite sources as directed.</li>
-<li><strong>Make a habit of ending with a thoughtful question.</strong> When it fits the assignment, ask something specific that invites more than a yes-or-no answer.</li>
 <li><strong>Build on classmates’ ideas.</strong> Refer to a particular point, explain why you agree or see it differently, and add an example, connection, or follow-up question.</li>
 <li><strong>Return to the conversation.</strong> Post early enough to leave room for discussion, then check back and respond to questions. Check for separate deadlines for your first post and replies.</li>
 </ul>
+</div>
+<aside class="discussion-coaching" aria-labelledby="invite-a-reply">
+<h2 id="invite-a-reply">End with a question</h2>
+<p>When it fits the assignment, end your first post with a specific, open-ended question. It’s a small courtesy: your classmates have a clear place to start, and their replies can take the conversation somewhere new.</p>
+<p><strong>Try:</strong> “I think this strategy would work well for small groups. What might you change if the group were much larger?”</p>
+</aside>
+</div>
 <h2>Questions that invite conversation</h2>
 <ul><li>“How might this approach work differently in a workplace?”</li><li>“What example would challenge this idea?”</li><li>“Which part of this solution would be hardest to put into practice, and why?”</li></ul>
 <h2>A reply that adds something</h2>
