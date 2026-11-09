@@ -107,3 +107,27 @@ main > .sheet{background:var(--book-paper);border:0;border-radius:0;box-shadow:n
 .handbook-page main header > .handbook-home-link:hover{text-decoration:underline}
 .handbook-page main header > .handbook-home-link:focus-visible{outline:2px solid var(--book-blue);outline-offset:2px}
 @media print{.handbook-page main header > .handbook-home-link{display:none}}
+
+/* Give section headings a consistent hierarchy on the white reading pages.
+   Compact card headings keep their local sizes. */
+body.handbook-page main h2,.student-topic main h2{color:var(--book-blue);font-weight:700}
+.handbook-page main :where(section,article,.habit-title):not(:where(.card,.skill))>h2,
+.student-topic main :where(section,article)>h2{font-size:clamp(1.32rem,2.1vw,1.5rem);line-height:1.25;margin-block-end:.65rem;text-wrap:balance}
+.student-topic-body>section+section{margin-top:1.75rem}
+.student-topic-body>section>p:first-of-type{margin-top:0}
+.student-topic-body .video-frame{overflow:hidden;border:1px solid var(--book-rule);border-radius:8px}
+.student-topic-body .video-frame .video{display:block}
+
+/* Shared footer for the student edition. */
+.handbook-footer{box-sizing:border-box;width:100%;max-width:1000px;margin:0 auto;padding:14px clamp(18px,4vw,46px);border-top:3px solid var(--book-gold);background:var(--book-blue);color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;font-size:.82rem;line-height:1.5}
+.handbook-footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.handbook-footer a:focus-visible{outline:2px solid var(--book-gold);outline-offset:3px}
+.handbook-footer :is(p,.last-updated){margin:0;padding:0;border:0;text-align:inherit;color:inherit;font-size:inherit;line-height:inherit}
+.handbook-footer-meta{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media(min-width:850px){
+  .handbook-sidebar{grid-column:1;grid-row:1 / span 2}
+  .handbook-page>main{grid-column:2;grid-row:1;min-height:calc(100vh - 70px)}
+  .handbook-footer{grid-column:2;grid-row:2}
+  body.handbook-page{row-gap:0}
+}
+@media print{.handbook-footer{display:block;background:#fff;color:#000;padding-inline:0}}

@@ -6,7 +6,7 @@ Shared student resources for Start Here modules in OCTC Blackboard Ultra courses
 
 These pages provide information that applies across courses. They are maintained in one place so updates can appear in every course that links to or embeds them.
 
-Learning Tools & Support has a compact Pathfinder cover and a chapter menu on every student page. Direct chapter addresses and in-page anchors are kept for Blackboard links and embeds. Edit `handbook.js` for chapter order and related topics, `handbook.css` for the reading layout, and `student-resources.html` for the table of contents.
+Learning Tools & Support has a compact Pathfinder cover and a chapter menu on every student page. Direct chapter addresses and in-page anchors are kept for Blackboard links and embeds. Edit `handbook.js` for chapter order, related topics, and the student footer version, `handbook.css` for the reading layout, and `student-resources.html` for the table of contents.
 
 [Instructor Resources](https://octc-instructional-design.github.io/Bb_Start_Here/instructor-resources.html) is a separate entry point for faculty guides and course-building tools. It is not linked from Learning Tools & Support.
 
@@ -14,11 +14,16 @@ Learning Tools & Support has a compact Pathfinder cover and a chapter menu on ev
 
 - `library-research.html` — start research, find library services, and connect with the Teaching and Learning Center
 
-Technology Tips & Help, Study & Stay on Track, and Communicate & Participate are topic indexes. The former Academic Success & Communication index remains available for older Blackboard links. Add a topic as its own page, then link to it from the index and add it to that chapter’s list in `handbook.js`. Use an existing topic page as a template. Keep existing index IDs and topic URLs for bookmarked Blackboard links.
+Learning in Blackboard, Technology Tips & Help, Study & Stay on Track, and Communicate & Participate are topic indexes. The former Academic Success & Communication index remains available for older Blackboard links. Add a topic as its own page, then link to it from the index and add it to that chapter’s list in `handbook.js`. Use an existing topic page as a template. Keep existing index IDs and topic URLs for bookmarked Blackboard links.
 
 
 - `student-resources.html` — Learning Tools & Support cover and table of contents; `index.html` opens this page from the website’s main address
-- `learning-in-blackboard.html` — finding course content, submitting work, discussions, grades, calendars, and Blackboard tutorials
+- `learning-in-blackboard.html` — index for Blackboard guides
+- `blackboard-get-started.html` — take six steps on your first visit and watch a quick Blackboard introduction
+- `blackboard-course-materials-and-deadlines.html` — open Course Content, follow your module, and check what’s due
+- `blackboard-submit-work-and-take-tests.html` — check file types, confirm your submission, and get ready before opening a test
+- `blackboard-discussions.html` — find the discussion, read the prompt, and post or reply
+- `blackboard-grades-and-feedback.html` — find your scores and use instructor comments on your next assignment
 - `technology-tips.html` — common technology issues and support
 - `padlet.html` — for students: opening a padlet, adding and changing a post, and what not to share
 - `recording-tools.html` — recording and submitting video

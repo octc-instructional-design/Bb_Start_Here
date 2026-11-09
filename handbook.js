@@ -1,7 +1,7 @@
 /* Navigation for the student learning resources. Keep these paths stable for Blackboard links. */
 (() => {
   const groups = [
-    ["Learning in Blackboard","learning-in-blackboard.html",[["Ally alternative formats","ally-alternative-formats.html"]]],
+    ["Learning in Blackboard","learning-in-blackboard.html",[["Get Started in Blackboard","blackboard-get-started.html"],["Find Course Materials & Deadlines","blackboard-course-materials-and-deadlines.html"],["Submit Work & Take Tests","blackboard-submit-work-and-take-tests.html"],["Join a Discussion","blackboard-discussions.html"],["Check Grades & Feedback","blackboard-grades-and-feedback.html"],["Use Ally Alternative Formats","ally-alternative-formats.html"]]],
     ["Study & Stay on Track","study-stay-on-track.html",[["Make Online Learning Work for You","online-learning-success.html"],["Plan Your Week","plan-your-week.html"],["Understand Your Grades","understand-your-grades.html"],["Use Sources and Tools Responsibly","use-sources-responsibly.html"],["Citation Help: MLA or APA?","citation-help.html"]]],
     ["Library & Research", "library-research.html", []],
     ["Communicate & Participate","communicate-participate.html",[["Classroom Participation","classroom-participation.html"],["Netiquette","netiquette.html"],["Discussion Boards","discussion-boards.html"],["Email Your Instructor","email-your-instructor.html"],["Report Problems Early","report-course-problems.html"],["Give Useful Course Feedback","give-course-feedback.html"]]],
@@ -102,6 +102,23 @@
     });
     main.append(pager);
   }
+  const footer = element('footer', 'handbook-footer');
+  const feedback = element('p', 'handbook-footer-feedback', 'Suggest an addition or correction: ');
+  const priorFeedback = main.querySelector('.resource-feedback');
+  const contact = priorFeedback?.querySelector('a') || link([
+    'email Stephanie Self',
+    'mailto:stephanie.self@kctcs.edu?subject=Student%20Resources%20suggestion%20or%20correction'
+  ]);
+  feedback.append(contact, '.');
+  priorFeedback?.remove();
+  const version = element('p', 'handbook-version', 'VERSION: Fall 2026');
+  const updated = main.querySelector('[data-last-updated]');
+  const meta = element('div', 'handbook-footer-meta');
+  meta.append(version);
+  if (updated) meta.append(updated);
+  footer.append(feedback, meta);
+  main.after(footer);
+
   const wide = matchMedia('(min-width: 850px)');
   const sync = () => { menu.open = wide.matches; };
   sync();
