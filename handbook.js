@@ -1,14 +1,13 @@
 /* Navigation for the student learning resources. Keep these paths stable for Blackboard links. */
 (() => {
   const groups = [
-    ["Learning in Blackboard", "learning-in-blackboard.html", [["Ally alternative formats", "ally-alternative-formats.html"]]],
-    ["Technology Tips & Help", "technology-tips.html", [["Browser Troubleshooting", "browser-troubleshooting.html"], ["Chromebook Tips", "chromebook-tips.html"], ["Textbooks & Course Materials", "textbooks-course-materials.html"], ["Publisher & Ebook Support", "publisher-support.html"], ["Microsoft 365 Help", "microsoft-365-help.html"], ["Google Files to Blackboard", "google-files-for-blackboard.html"], ["Recording and Submitting Video", "recording-tools.html"], ["Respondus LockDown Browser", "respondus-lockdown-browser.html"], ["Using Padlet", "padlet.html"]]],
-    ["Academic Success & Communication", "academic-success.html", [["Plan Your Week", "plan-your-week.html"], ["Make Online Learning Work for You", "online-learning-success.html"], ["Understand Your Grades", "understand-your-grades.html"], ["Classroom Participation", "classroom-participation.html"], ["Netiquette", "netiquette.html"], ["Discussion Boards", "discussion-boards.html"], ["Email Your Instructor", "email-your-instructor.html"], ["Report Problems Early", "report-course-problems.html"], ["Give Useful Course Feedback", "give-course-feedback.html"], ["Use Sources and Tools Responsibly", "use-sources-responsibly.html"], ["Citation Help: MLA or APA?", "citation-help.html"]]],
-    ['Student Support', 'student-support.html', []],
-    ['Skills for Life & Work', 'essential-skills.html', []],
-    ['AI Literacy', 'ai-literacy.html', [
-      ['Before you ask', 'ai-before-you-ask.html'], ['Before you use it', 'ai-before-you-use-it.html'],
-      ['Before you turn it in', 'ai-before-you-turn-it-in.html'], ['Keep a trail of your work', 'ai-keep-a-trail.html']]],
+    ["Learning in Blackboard","learning-in-blackboard.html",[["Ally alternative formats","ally-alternative-formats.html"]]],
+    ["Study & Stay on Track","study-stay-on-track.html",[["Make Online Learning Work for You","online-learning-success.html"],["Plan Your Week","plan-your-week.html"],["Understand Your Grades","understand-your-grades.html"],["Use Sources and Tools Responsibly","use-sources-responsibly.html"],["Citation Help: MLA or APA?","citation-help.html"]]],
+    ["Communicate & Participate","communicate-participate.html",[["Classroom Participation","classroom-participation.html"],["Netiquette","netiquette.html"],["Discussion Boards","discussion-boards.html"],["Email Your Instructor","email-your-instructor.html"],["Report Problems Early","report-course-problems.html"],["Give Useful Course Feedback","give-course-feedback.html"]]],
+    ["Technology Tips & Help","technology-tips.html",[["Browser Troubleshooting","browser-troubleshooting.html"],["Chromebook Tips","chromebook-tips.html"],["Textbooks & Course Materials","textbooks-course-materials.html"],["Publisher & Ebook Support","publisher-support.html"],["Microsoft 365 Help","microsoft-365-help.html"],["Google Files to Blackboard","google-files-for-blackboard.html"],["Recording and Submitting Video","recording-tools.html"],["Respondus LockDown Browser","respondus-lockdown-browser.html"],["Using Padlet","padlet.html"]]],
+    ["Student Support","student-support.html",[]],
+    ["AI Literacy","ai-literacy.html",[["Before you ask","ai-before-you-ask.html"],["Before you use it","ai-before-you-use-it.html"],["Before you turn it in","ai-before-you-turn-it-in.html"],["Keep a trail of your work","ai-keep-a-trail.html"]]],
+    ["Skills for Life & Work","essential-skills.html",[]],
     ['Plan Your Transfer', 'https://kctcs.edu/education-training/transfer/', []]
   ];
   const home = ['Table of Contents', 'student-resources.html'];
@@ -16,7 +15,7 @@
   const current = location.pathname.split('/').pop();
   const index = sequence.findIndex(([, href]) => href === current);
   const main = document.querySelector('main');
-  if (index < 0 || !main) return;
+  if (!main || (index < 0 && current !== 'academic-success.html')) return;
 
   const element = (tag, className, content) => {
     const node = document.createElement(tag);
@@ -71,7 +70,7 @@
   skip.href = '#' + main.id;
   document.body.prepend(skip, sidebar);
   document.body.classList.add('handbook-page');
-  if (index !== 0) {
+  if (index > 0) {
     const chapterIndex = groups.findIndex(([, href, children]) => href === current || children.some(([, child]) => child === current));
     const title = main.querySelector('h1');
     title?.before(element('p', 'handbook-kicker', 'Chapter ' + String(chapterIndex + 1).padStart(2, '0') + ' · Learning Tools & Support'));
