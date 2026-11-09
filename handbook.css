@@ -70,6 +70,11 @@ body.handbook-page{margin:0;padding:0;display:grid;grid-template-columns:minmax(
 .topic-index li a:hover strong{text-decoration:underline}
 .topic-index strong,.topic-index small{display:block}
 .topic-index small{font-size:.88rem;line-height:1.45;color:#455b6e}
+
+/* Gold squares lead local topic rows; external links retain their arrows. */
+.handbook-page main .topic-index > ul > li > a[href]:has(> .toc-arrow):not([href^="http" i],[href^="//"],[href^="mailto:" i],[href^="tel:" i]){grid-template-columns:7px minmax(0,1fr);column-gap:9px}
+.handbook-page main .topic-index > ul > li > a[href]:has(> .toc-arrow):not([href^="http" i],[href^="//"],[href^="mailto:" i],[href^="tel:" i])::before{content:"";width:6px;height:6px;align-self:start;margin-block-start:.55em;background:var(--book-gold)}
+.handbook-page main .topic-index > ul > li > a[href]:has(> .toc-arrow):not([href^="http" i],[href^="//"],[href^="mailto:" i],[href^="tel:" i]) > .toc-arrow{display:none}
 .student-topic{margin:0;background:var(--book-ground);color:#24313d;font:16px/1.6 Arial,Helvetica,sans-serif}
 .student-topic:not(.handbook-page) main{max-width:850px;margin:auto;padding:24px;background:#fff}
 .student-topic header .logo{width:min(220px,75%);height:auto}
